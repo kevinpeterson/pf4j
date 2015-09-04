@@ -70,7 +70,7 @@ public class DirectedGraph<V> {
     }
 
     public List<V> getNeighbors(V vertex) {
-        if (neighbors.containsKey(vertex)) {
+        if (! neighbors.containsKey(vertex)) {
         	return new ArrayList<V>();
         }
         return neighbors.get(vertex);
